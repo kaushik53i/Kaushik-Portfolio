@@ -1,0 +1,58 @@
+/* ===== STATS SECTION ===== */
+.stats {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+/* Container */
+.stats-container {
+  max-width: 1000px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #00c6ff;
+}
+
+/* Number */
+.stat-card h1 {
+  font-size: 32px;
+  color: #00c6ff;
+}
+
+/* Label */
+.stat-card p {
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,73 @@
+:root {
+  --bg: #0a0f1c;
+  --card: rgba(255, 255, 255, 0.06);
+  --border: rgba(0, 198, 255, 0.2);
+  --text: #ffffff;
+  --subtext: #cbd5e1;
+  --accent: #00c6ff;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+button {
+  transition: all 0.3s ease;
+}
+/* Glow circles */
+body::before {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: var(--accent);
+  top: -100px;
+  left: -100px;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: var(--accent);
+  bottom: -100px;
+  right: -100px;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.section-divider {
+  height: 1px;
+  width: 70%;
+  margin: 80px auto;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    #00c6ff,
+    transparent
+  );
+
+  box-shadow: 0 0 10px #00c6ff;
+  opacity: 0.6;
+}
+/* ===== SCROLL ANIMATION ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+}

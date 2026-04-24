@@ -1,0 +1,126 @@
+/* ===== PROJECTS SECTION ===== */
+.projects {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.02); /* ✅ depth */
+  border-radius: 20px; /* ✅ smooth edges */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Title */
+.projects-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+
+  color: var(--text); /* ADD */
+}
+
+/* Grid */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #00c6ff;
+  box-shadow: 0 0 20px #00c6ff33; /* 🔥 glow effect */
+}
+
+/* Image */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Content */
+.project-content {
+  padding: 15px;
+}
+
+.project-content h3 {
+  margin-bottom: 8px;
+}
+
+.project-content p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Buttons */
+.project-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.no-live {
+  font-size: 13px;
+  color: #94a3b8;
+  border: 1px solid #94a3b8;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* GitHub */
+.project-buttons a:first-child {
+  background: #00c6ff;
+  color: black;
+}
+
+/* Live */
+.project-buttons a:last-child {
+  border: 1px solid #00c6ff;
+  color: #00c6ff;
+}
+
+.project-buttons a:hover {
+  opacity: 0.8;
+}
+
+/* Description */
+.project-desc {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Tech stack */
+.tech-stack {
+  font-size: 12px;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}

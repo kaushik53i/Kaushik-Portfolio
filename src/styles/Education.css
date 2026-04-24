@@ -1,0 +1,64 @@
+.education {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #00c6ff;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
+  text-align: left;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.2);
+}
+
+.edu-card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  color: #94a3b8;
+  margin: 5px 0;
+}
+
+.semester {
+  margin-top: 10px;
+}
+
+.semester h4 {
+  color: #00c6ff;
+  margin-bottom: 5px;
+}
+
+.semester ul {
+  padding-left: 15px;
+}
+
+.semester li {
+  color: #cbd5f5;
+  font-size: 14px;
+}
