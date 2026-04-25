@@ -10,7 +10,7 @@ const Projects = () => {
     tech: "React, CSS, JavaScript",
     image: portfolioImg,
     github: "https://github.com/kaushik53i/Kaushik-Portfolio.git",
-    live: "https://your-portfolio.netlify.app", // ✅ real link
+    live: "https://kaushikb-portfolio.netlify.app/", // ✅ real link
   },
   {
     title: "Train Ticket Booking System",
