@@ -1,6 +1,6 @@
 import "./../styles/Hero.css";
 import { TypeAnimation } from "react-type-animation";
-import profile from "../assets/profile.png"; // add your image here
+import profile from "../assets/Profile.png"; 
 import resume from "../assets/Resume.pdf";
 const Hero = () => {
   return (
