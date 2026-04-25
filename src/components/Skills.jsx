@@ -27,8 +27,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills">
-      <h2 className="skills-title">My Skills</h2>
+    <section id="skills" className="skills fade-up">
+      <h2 className="glow-title">My Skills</h2>
 
       <div className="skills-container">
         {skills.map((skill, index) => (

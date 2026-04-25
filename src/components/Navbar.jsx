@@ -2,26 +2,23 @@ import { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import "../styles/Navbar.css";
 
+// ✅ import logo correctly
+import logo from "../assets/Icon.png";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-    setOpen(false);
-  };
-
+  // ✅ ONLY ONE scroll effect
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
     const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+
       let current = "home";
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 120;
+
         if (window.scrollY >= sectionTop) {
           current = section.getAttribute("id");
         }
@@ -34,10 +31,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ✅ smooth scroll
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-<img src="/Icon.png" alt="logo" className="logo-img" />
+
+        {/* ✅ fixed logo */}
+        <img src={logo} alt="logo" className="logo-img" />
 
         <ul className="nav-links">
           <li className={active==="home"?"active":""} onClick={()=>scrollToSection("home")}>Home</li>
@@ -46,7 +54,6 @@ const Navbar = () => {
           <li className={active==="projects"?"active":""} onClick={()=>scrollToSection("projects")}>Projects</li>
           <li className={active==="skills"?"active":""} onClick={()=>scrollToSection("skills")}>Skills</li>
           <li className={active==="contact"?"active":""} onClick={()=>scrollToSection("contact")}>Contact</li>
-          
         </ul>
 
         <div className="menu-icon" onClick={() => setOpen(!open)}>
@@ -62,7 +69,6 @@ const Navbar = () => {
           <p onClick={()=>scrollToSection("projects")}>Projects</p>
           <p onClick={()=>scrollToSection("skills")}>Skills</p>
           <p onClick={()=>scrollToSection("contact")}>Contact</p>
-         
         </div>
       )}
     </nav>

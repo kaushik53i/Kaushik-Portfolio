@@ -9,7 +9,7 @@ const Stats = () => {
   ];
 
   return (
-    <section id="stats" className="stats">
+    <section id="stats" className="stats fade-up">
       <div className="stats-container">
         {data.map((item, index) => (
           <div className="stat-card" key={index}>

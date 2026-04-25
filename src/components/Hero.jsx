@@ -1,7 +1,7 @@
 import "./../styles/Hero.css";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../assets/profile.png"; // add your image here
-
+import resume from "../assets/Resume.pdf";
 const Hero = () => {
   return (
     <section id="home" className="hero">
@@ -34,16 +34,28 @@ const Hero = () => {
   using modern technologies like React, JavaScript, and backend systems.
 </p>
 
-          <div className="hero-buttons">
-<button className="btn primary" onClick={() => window.location='#contact'}>
-  Hire Me
-</button>
+<div className="hero-buttons">
 
-<button className="btn secondary" onClick={() => window.location='#projects'}>
-  View Projects
-</button>
+  <button
+    className="btn primary"
+    onClick={() => window.location = "#contact"}
+  >
+    Hire Me
+  </button>
 
-          </div>
+  <button
+    className="btn secondary"
+    onClick={() => window.location = "#projects"}
+  >
+    View Projects
+  </button>
+
+  {/* 🔥 NEW BUTTON */}
+<a href={resume} download className="btn resume-btn">
+   📄 Download Resume
+</a>
+
+</div>
         </div>
 
         {/* Right Image */}

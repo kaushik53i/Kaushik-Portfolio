@@ -4,9 +4,10 @@
 }
 
 .education h2 {
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: 40px;
   color: #00c6ff;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
 }
 
 .education-container {
@@ -19,25 +20,26 @@
 .edu-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 15px;
   width: 320px;
 
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
 
   transition: 0.3s;
   text-align: left;
 }
 
 .edu-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 198, 255, 0.25);
 }
 
 .edu-card h3 {
-  color: white;
-  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
 }
 
 .edu-card p {
@@ -52,13 +54,29 @@
 .semester h4 {
   color: #00c6ff;
   margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.semester li {
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+.semester li span {
+  color: #00c6ff;
+  font-weight: 600;
 }
 
 .semester ul {
   padding-left: 15px;
 }
 
-.semester li {
-  color: #cbd5f5;
-  font-size: 14px;
+
+.label {
+  color: #94a3b8;
+}
+
+.value {
+  color: #00c6ff;
+  font-weight: 600;
 }
