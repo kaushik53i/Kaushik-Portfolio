@@ -51,8 +51,8 @@ const Navbar = () => {
           <li className={active==="home"?"active":""} onClick={()=>scrollToSection("home")}>Home</li>
           <li className={active==="education"?"active":""} onClick={()=>scrollToSection("education")}>Education</li>
           <li className={active==="services"?"active":""} onClick={()=>scrollToSection("services")}>Services</li>
-          <li className={active==="projects"?"active":""} onClick={()=>scrollToSection("projects")}>Projects</li>
           <li className={active==="skills"?"active":""} onClick={()=>scrollToSection("skills")}>Skills</li>
+          <li className={active==="projects"?"active":""} onClick={()=>scrollToSection("projects")}>Projects</li>
           <li className={active==="contact"?"active":""} onClick={()=>scrollToSection("contact")}>Contact</li>
         </ul>
 
@@ -66,8 +66,8 @@ const Navbar = () => {
           <p onClick={()=>scrollToSection("home")}>Home</p>
           <p onClick={()=>scrollToSection("education")}>Education</p>
           <p onClick={()=>scrollToSection("services")}>Services</p>
-          <p onClick={()=>scrollToSection("projects")}>Projects</p>
           <p onClick={()=>scrollToSection("skills")}>Skills</p>
+          <p onClick={()=>scrollToSection("projects")}>Projects</p>
           <p onClick={()=>scrollToSection("contact")}>Contact</p>
         </div>
       )}
